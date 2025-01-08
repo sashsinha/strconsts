@@ -60,6 +60,6 @@ import (
 )
 
 func main() {
-    fmt.Println("Digits:", strconsts.Digits)  // 0123456789
+    fmt.Println("Digits:", strconsts.Digits) // Digits: 0123456789
 }
 ```
