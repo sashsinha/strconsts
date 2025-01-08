@@ -51,6 +51,7 @@ $ go get github.com/sashsinha/strconsts
 
 ## Example Usage
 
+
 ```go
 package main
 
@@ -60,6 +61,33 @@ import (
 )
 
 func main() {
-    fmt.Println("Digits:", strconsts.Digits) // Digits: 0123456789
+    fmt.Println("ASCIILetters:", strconsts.ASCIILetters)
+    fmt.Println("ASCIILowercase:", strconsts.ASCIILowercase)
+    fmt.Println("ASCIIUppercase:", strconsts.ASCIIUppercase)
+    fmt.Println("Digits:", strconsts.Digits)
+    fmt.Println("HexDigits:", strconsts.HexDigits)
+    fmt.Println("OctDigits:", strconsts.OctDigits)
+    fmt.Println("Punctuation:", strconsts.Punctuation)
+    fmt.Println("Printable:", strconsts.Printable)
+    fmt.Println("Whitespace:", strconsts.Whitespace)
 }
+```
+**Output:**
+```
+ASCIILetters: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+ASCIILowercase: abcdefghijklmnopqrstuvwxyz
+ASCIIUppercase: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Digits: 0123456789
+HexDigits: 0123456789abcdefABCDEF
+OctDigits: 01234567
+Punctuation: !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+Printable: 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
+
+
+Whitespace:
+
+
+
+
 ```
