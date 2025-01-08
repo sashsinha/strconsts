@@ -55,11 +55,12 @@ $ go get github.com/sashsinha/strconsts
 package main
 
 import (
-    "fmt"
-    "github.com/sashsinha/strconsts"
+	"fmt"
+
+	"github.com/sashsinha/strconsts"
 )
 
 func main() {
-    fmt.Println("Digits:", strconsts.Digits)  // 0123456789
+	fmt.Println("Digits:", strconsts.Digits) // Digits: 0123456789
 }
 ```
